@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState, useEffect } from "react";
 type Sliderr = {
   map(arg0: (s: string, i: number) => React.JSX.Element): React.ReactNode;
@@ -24,7 +25,7 @@ export default function ImageSlider({ slides }: { slides: Sliderr }  ) {
         style={{ transform: `translateX(-${current * 100}%)` }}
       >
         {slides.map((s: string, i: number) => (
-          <img src={s} key={i} alt={`Slide ${i}`} />
+          <Image  width={150} height={100} src={s} key={i} alt={`Slide ${i}`} />
         ))}
       </div>
       {/* Navigation buttons removed */}

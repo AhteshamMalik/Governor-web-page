@@ -16,7 +16,7 @@ import imgg8 from "@/public/imggg8.jpg";
 import imgg9 from "@/public/imggg9.jpg";
 
 export default function Home() {
-  let slides = [
+  const  slides = [
     "https://www.governorsindh.com/_next/static/media/slideShow1.6f890b58.jpg",
     "https://www.governorsindh.com/_next/static/media/slideShow5.b502aa01.jpg",
     "https://www.governorsindh.com/_next/static/media/slideShow7.9e3fcc75.jpg",
